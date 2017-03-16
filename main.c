@@ -90,19 +90,28 @@
 
 		
 
-		printf("Input:\n");
+		//printf("Input:\n");
 		
 		for (n = 0; n < N; n++) {
 			
 			input[n] = cos(omega * n);
 			
-			printf("%f\n", input[n]);
+			//printf("%f\n", input[n]);
 			
 		}
 		
-		printf("Output:\n");
+		//printf("Output:\n");
 		
 		for (n = 0; n < N; n++) {
+			
+			//zeruje pierwsze 10 probek, inaczej wynik moze byc niepoprawny
+			
+			if (n < 10) {
+				
+				output[n] = 0;
+				continue;
+			}
+			
 			
 			output[n] = 0;
 			
@@ -112,7 +121,7 @@
 				
 			}
 			
-			printf("%f\n", output[n]);
+		//	printf("%f\n", output[n]);
 			
 			
 		}
