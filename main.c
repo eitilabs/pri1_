@@ -25,8 +25,8 @@
 		
 		int Ma = 10;
 		
-		float input[2000];
-		float output[2000];
+		float input[12000];
+		float output[12000];
 		
 		float outputMin, outputMax;
 		
@@ -58,7 +58,7 @@
 			
 			scanf("%d", &N);
 			
-			if (N >= 2000) {
+			if (N >= 12000) {
 				
 				printf("Liczba probek musi byc mniejsza od 2000. Wprowadz ponownie ilosc probek: ");
 				
